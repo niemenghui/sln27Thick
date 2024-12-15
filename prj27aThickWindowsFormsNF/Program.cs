@@ -16,7 +16,7 @@ namespace prj27aThickWindowsFormsNF
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
+            //19
             Form1 frm1 = new Form1();
             Application.Run(frm1);
         }
