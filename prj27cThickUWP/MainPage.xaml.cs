@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -32,6 +33,11 @@ namespace prj27cThickUWP
         {
             i++;
             btn33.Content = i.ToString();
+        }
+
+        private void sqlite3btn_Click(object sender, RoutedEventArgs e)
+        {
+          ;
         }
     }
 }

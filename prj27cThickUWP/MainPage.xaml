@@ -9,7 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-      
+
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="3*"/>
@@ -22,7 +22,7 @@
 
 
         <Border Background="#2f5cb6">
-           
+
         </Border>
         <Border Grid.Column ="1" Background="#1f3d7a"/>
         <Border Grid.Row="1" Grid.ColumnSpan="2" Background="#ffffff"/>
@@ -36,10 +36,12 @@
         </StackPanel>
         <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal"
             HorizontalAlignment="Center" VerticalAlignment="Center">
-            <TextBlock Foreground="White" FontSize="25" Text="High: 66°" Margin="0,0,20,0"/>
-            <TextBlock Foreground="White" FontSize="25" Text="Low: 43°" Margin="0,0,20,0"/>
-            <TextBlock Foreground="White" FontSize="25" Text="Feels like: 63°"/>
-            <Button x:Name="btn33" Content="click to increase numC" Height="75" Width="305" Click="btn33_Click" RenderTransformOrigin="-0.275,-0.52" BorderBrush="#FF092AE4" Background="#33AF378F"/>
+            <TextBlock Foreground="White" FontSize="25" Text="High: 66°" Margin="0,0,20,0" RenderTransformOrigin="0.5,0.5" Width="3">
+                <TextBlock.RenderTransform>
+                    <CompositeTransform ScaleX="-1"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+            <Button x:Name="btn33" Content="click to increase numC" Height="48" Width="174" Click="btn33_Click" RenderTransformOrigin="-0.275,-0.52" BorderBrush="#FF092AE4" Background="#33AF378F"/>
             <Image Margin="20" Source="/Assets/weather.jpg"/>
 
         </StackPanel>
